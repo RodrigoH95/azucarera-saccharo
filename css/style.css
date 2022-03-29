@@ -14,7 +14,8 @@
 }
 
 * {
-    margin: 0;
+    margin: 0; 
+    font-family: var(--ff-principal);
 }
 
 
@@ -91,13 +92,7 @@
 
 .img-principal {
     text-align: center;
-    
 }
-
-.texto-principal {
-    font-family: var(--ff-principal);
-}
-
 
 
 /* FOOTER */
