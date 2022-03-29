@@ -67,7 +67,7 @@
 /* CONTENIDO PRINCIPAL */
 
 .main {
-    margin: 0 10%;
+    margin: 0 8%;
 }
 
 .contenedor {
@@ -88,6 +88,7 @@
 
 .slogan {
     font-family: var(--ff-cita);
+    font-size: 1.3em;
 }
 
 .img-principal {
