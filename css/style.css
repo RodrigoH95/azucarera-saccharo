@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Satisfy&family=Signika+Negative:wght@500;700&family=Ultra&display=swap');
+
+:root {
+    --color-primario: #fff;
+    --color-secundario: #2a8db7;
+    --color-terciario: #e02525;
+    --color-sombreado: #f6f6f6;
+
+
+    --ff-cursiva: 'Corinthia', cursive;
+    --ff-cita: 'Satisfy', cursive;
+    --ff-principal: 'Signika Negative', sans-serif;
+    --ff-titulo: 'Ultra', serif;
+}
+
+* {
+    margin: 0;
+}
+
+
+/* ENCABEZADO */
+
+.encabezado, .footer {
+    background: var(--color-secundario);
+}
+
+.contenedor-flex {
+    display: flex;
+    align-items: center;
+}
+
+.encabezado {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+}
+
+.logo {
+    margin: 4px 0;
+    height: 2.5em;
+}
+
+.pag-nombre {
+    text-decoration: none;
+    font-size: 40px;
+    color: var(--color-primario);
+    font-weight: 900;
+}
+
+.nav-list {
+    display:flex;
+    gap: 1em;
+    list-style-type: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--color-primario);
+    padding: 0.2em 0;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid var(--color-primario);
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.main {
+    margin: 0 10%;
+}
+
+.contenedor {
+    background: var(--color-sombreado);
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid var(--color-secundario);
+    border-radius: 10px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.titulo {
+    font-family: var(--ff-titulo);
+}
+
+.slogan {
+    font-family: var(--ff-cita);
+}
+
+.img-principal {
+    text-align: center;
+    
+}
+
+.texto-principal {
+    font-family: var(--ff-principal);
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    justify-content: flex-end;
+    padding: 0 2em;
+}
+
+.footer-item {
+    color: var(--color-primario);
+}
