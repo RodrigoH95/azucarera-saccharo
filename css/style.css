@@ -34,6 +34,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5em;
+    height: 3em;
+    margin-bottom: 1rem;
 }
 
 .logo {
@@ -48,26 +50,27 @@
     font-weight: 900;
 }
 
-.nav-list {
-    display:flex;
+.nav-bar {
+    height: 2em;
+    display: flex;
     gap: 1em;
-    list-style-type: none;
 }
 
-.nav-item {
+.nav-enlace {
     text-decoration: none;
     color: var(--color-primario);
     padding: 0.2em 0;
 }
 
-.nav-item:hover {
+.nav-enlace:hover {
+    color: var(--color-primario);
     border-bottom: 2px solid var(--color-primario);
 }
 
 /* CONTENIDO PRINCIPAL */
 
 .main {
-    margin: 0 8%;
+    margin: 2em 10%;
 }
 
 .contenedor {
@@ -81,6 +84,14 @@
 .centrado {
     text-align: center;
 }
+
+/* Margenes */
+.mg-10 {margin: 1em 10%}
+.mg-20 {margin: 1em 20%}
+.mg-30 {margin: 1em 30%}
+.mg-40 {margin: 1em 40%}
+.mg-50 {margin: 1em 50%}
+
 
 .titulo {
     font-family: var(--ff-titulo);
