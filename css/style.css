@@ -168,7 +168,7 @@ h3 {
   overflow: hidden;
 }
 
-.tarjeta-contenedor {
+.tarjeta-fondo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,6 +285,11 @@ aside {
 /*  Media Queries */
 
 @media (max-width: 1366px) {
+
+  .tarjeta-fondo {
+    font-size: 1em;
+  }
+
   aside {
     margin: auto;
     width: auto;
@@ -317,7 +322,7 @@ aside {
     height: 70vw;
   }
 
-  .tarjeta-contenedor {
+  .tarjeta-fondo {
     font-size: 1em;
   }
 
