@@ -6,6 +6,11 @@
     gap: 1em;
 }
 
+.subtitulo {
+    grid-column: 1 / span 2;
+    padding: 0 1em;
+}
+
 .tarjeta {
     margin: auto;
     position: relative;

@@ -101,10 +101,6 @@ h2, h3 {
     font-family: var(--ff-titulo);
 }
 
-.subtitulo {
-    
-}
-
 .slogan {
     font-family: var(--ff-cita);
     font-size: 1.3em;
@@ -112,6 +108,11 @@ h2, h3 {
 
 .img-principal {
     text-align: center;
+}
+
+.img-inicial {
+    border-radius: 10px;
+    margin-bottom: 1em;
 }
 
 .ubicacion {
