@@ -15,18 +15,11 @@
     margin: auto;
     position: relative;
     width: 100%;
-    max-width: 500px;
-    height: 400px;
+    height: 30vw;
     border: 6px outset var(--color-secundario);
     border-radius: 5px;
     overflow: hidden;
 
-}
-
-.tarjeta > img {
-    width: 100%;
-    min-height: 400px;
-    object-fit: cover;
 }
 
 .tarjeta-titulo {
@@ -39,3 +32,25 @@
     background-color: #ffffffc6;
     z-index: 10;
 }
+
+#campo {
+    background: url(../img/campo-azucarero.jpg);
+}
+
+#nacional {
+    background: url(../img/azucar-sin-refinar.jpg);
+}
+
+#pallets {
+    background: url(../img/azucar-pallets.jpg);
+}
+
+#calidad {
+    background: url(../img/azucar-2.jpg);
+}
+
+#campo, #nacional, #pellets, #calidad {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
