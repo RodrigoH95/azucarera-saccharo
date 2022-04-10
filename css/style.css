@@ -182,5 +182,10 @@ h2, h3 {
     }
 
     .mg-10 {
-        margin: 1em 0}
+        margin: 1em 0;
+    }
+
+    .img-inicial {
+        border-radius: 0;
+    }
 }
