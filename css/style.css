@@ -71,6 +71,19 @@ h2, h3 {
     border-bottom: 2px solid var(--color-primario);
 }
 
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: var(--color-primario);
+}
+
 /* CONTENIDO PRINCIPAL */
 
 .main {
@@ -166,7 +179,7 @@ h2, h3 {
     .subtitulo {
         grid-column: 1;
     }
-    
+
     .contenedor-tarjetas {
         grid-template-columns: 1fr;
     }
@@ -181,6 +194,31 @@ h2, h3 {
 }
 
 @media (max-width: 600px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .nav-bar {
+        position: fixed;
+        left: -100%;
+        top: 3em;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--color-secundario);
+        width: 100%;
+        height: auto;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-enlace {
+        margin: 1em 0;
+    }
+
+    .nav-bar.active {
+        left: 0%;
+    }
+
     .encabezado {
         flex-direction: row-reverse;
     }
