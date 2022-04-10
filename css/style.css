@@ -171,6 +171,10 @@ h2, h3 {
         grid-template-columns: 1fr;
     }
 
+    .tarjeta {
+        height: 50vh;
+    }
+
     .mapa {
         width: 100%;
     }
@@ -183,6 +187,10 @@ h2, h3 {
 
     .mg-10 {
         margin: 1em 0;
+    }
+
+    .mg-20 {
+        margin: 1em 5%
     }
 
     .img-inicial {
