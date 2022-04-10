@@ -111,7 +111,7 @@ h2, h3 {
 }
 
 .img-inicial {
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
     margin-bottom: 1em;
 }
@@ -166,7 +166,7 @@ h2, h3 {
     .subtitulo {
         grid-column: 1;
     }
-
+    
     .contenedor-tarjetas {
         grid-template-columns: 1fr;
     }
@@ -195,5 +195,6 @@ h2, h3 {
 
     .img-inicial {
         border-radius: 0;
+        width: 100%;
     }
 }
