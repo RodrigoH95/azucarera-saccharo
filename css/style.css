@@ -312,6 +312,14 @@ aside {
     height: 50vh;
   }
 
+  .procesos-img {
+      width: 80%;
+  }
+
+  #etapas:hover {
+      transform: none;
+  }
+
   .mapa {
     width: 100%;
   }
@@ -358,5 +366,9 @@ aside {
   .img-inicial {
     border-radius: 0;
     width: 100%;
+  }
+
+  .procesos-img {
+      width: 90%;
   }
 }
