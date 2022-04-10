@@ -1,238 +1,347 @@
-@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Satisfy&family=Signika+Negative:wght@500;700&family=Ultra&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=Satisfy&family=Signika+Negative:wght@500;700&family=Ultra&display=swap");
+
+/* ESTILOS GENERALES */
 
 :root {
-    --color-primario: #fff;
-    --color-secundario: #2a8db7;
-    --color-terciario: #e02525;
-    --color-sombreado: #f6f6f6;
+  --color-primario: #fff;
+  --color-secundario: #2a8db7;
+  --color-terciario: #e02525;
+  --color-sombreado: #f6f6f6;
 
-
-    --ff-cursiva: 'Corinthia', cursive;
-    --ff-cita: 'Satisfy', cursive;
-    --ff-principal: 'Signika Negative', sans-serif;
-    --ff-titulo: 'Ultra', serif;
+  --ff-cursiva: "Corinthia", cursive;
+  --ff-cita: "Satisfy", cursive;
+  --ff-principal: "Signika Negative", sans-serif;
+  --ff-titulo: "Ultra", serif;
 }
 
 * {
-    margin: 0; 
-    font-family: var(--ff-principal);
-    box-sizing: border-box;
+  margin: 0;
+  font-family: var(--ff-principal);
+  box-sizing: border-box;
 }
 
-h2, h3 {
-    margin: .5em 0;
+h2,
+h3 {
+  margin: 0.5em 0;
 }
 
 /* ENCABEZADO */
 
-.encabezado, .footer {
-    background: var(--color-secundario);
+.encabezado,
+.footer {
+  background: var(--color-secundario);
 }
 
 .contenedor-flex {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .encabezado {
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5em;
-    height: 3em;
-    margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5em;
+  height: 3em;
+  margin-bottom: 1rem;
 }
 
 .logo {
-    margin: 4px 0;
-    height: 2.5em;
+  margin: 4px 0;
+  height: 2.5em;
 }
 
 .pag-nombre {
-    text-decoration: none;
-    font-size: 40px;
-    color: var(--color-primario);
-    font-weight: 900;
+  text-decoration: none;
+  font-size: 40px;
+  color: var(--color-primario);
+  font-weight: 900;
 }
 
 .nav-bar {
-    height: 2em;
-    display: flex;
-    gap: 1em;
+  height: 2em;
+  display: flex;
+  gap: 1em;
 }
 
 .nav-enlace {
-    text-decoration: none;
-    color: var(--color-primario);
-    padding: 0.2em 0;
+  text-decoration: none;
+  color: var(--color-primario);
+  padding: 0.2em 0;
 }
 
 .nav-enlace:hover {
-    color: var(--color-primario);
-    border-bottom: 2px solid var(--color-primario);
+  color: var(--color-primario);
+  border-bottom: 2px solid var(--color-primario);
 }
 
 .hamburguer {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background: var(--color-primario);
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background: var(--color-primario);
 }
 
 /* CONTENIDO PRINCIPAL */
 
 .main {
-    margin: 2em 10%;
+  margin: 2em 10%;
 }
 
 .contenedor {
-    background: var(--color-sombreado);
-    margin: 1em;
-    padding: 1.5em 1em;
-    border: 1px solid var(--color-secundario);
-    border-radius: 10px;
+  background: var(--color-sombreado);
+  margin: 1em;
+  padding: 1.5em 1em;
+  border: 1px solid var(--color-secundario);
+  border-radius: 10px;
 }
 
 .centrado {
-    text-align: center;
+  text-align: center;
 }
 
 /* Margenes */
-.mg-10 {margin: 1em 10%}
-.mg-20 {margin: 1em 20%}
-.mg-30 {margin: 1em 30%}
-.mg-40 {margin: 1em 40%}
-.mg-50 {margin: 1em 50%}
-
+.mg-10 {
+  margin: 1em 10%;
+}
+.mg-20 {
+  margin: 1em 20%;
+}
 
 .titulo {
-    font-family: var(--ff-titulo);
-}
-
-.slogan {
-    font-family: var(--ff-cita);
-    font-size: 1.3em;
-}
-
-.img-principal {
-    text-align: center;
-}
-
-.img-inicial {
-    width: 80%;
-    border-radius: 10px;
-    margin-bottom: 1em;
-}
-
-.ubicacion {
-    width: 100%;
-    height: 360px;
-    text-align: center;
-}
-
-.mapa {
-    width: 40%;
-    height: 100%;
+  font-family: var(--ff-titulo);
 }
 
 /* FOOTER */
 
 .footer {
-    justify-content: flex-end;
-    padding: 0 2em;
+  justify-content: flex-end;
+  padding: 0 2em;
 }
 
 .footer-item {
-    color: var(--color-primario);
+  color: var(--color-primario);
 }
 
+/* ESTILOS PARA SITIO INICIO */
+
+.slogan {
+    font-family: var(--ff-cita);
+    font-size: 1.3em;
+  }
+  
+  .img-principal {
+    text-align: center;
+  }
+  
+  .img-inicial {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  width: 85%;
+  gap: 1em;
+}
+
+.subtitulo {
+  grid-column: 1 / span 2;
+  padding: 0 1em;
+}
+
+.tarjeta {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  border: 6px outset var(--color-secundario);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tarjeta-titulo {
+  position: absolute;
+  top: 32%;
+  color: var(--color-secundario);
+  width: 100%;
+  padding: 40px 1em;
+  text-align: center;
+  background-color: #ffffffc6;
+  z-index: 10;
+}
+
+#campo {
+  background: url(../img/campo-azucarero.jpg);
+}
+
+#nacional {
+  background: url(../img/azucar-sin-refinar.jpg);
+}
+
+#pallets {
+  background: url(../img/azucar-pallets.jpg);
+}
+
+#calidad {
+  background: url(../img/azucar-2.jpg);
+}
+
+#campo,
+#nacional,
+#pellets,
+#calidad {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ESTILOS PARA SITIO DE PROCESO */
+
+.contenedor-indice {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+aside {
+  width: 30vw;
+}
+
+.indice {
+  position: fixed;
+  top: 150px;
+  margin-left: 1em;
+  padding: 1em;
+  border: 1px solid rgb(174, 174, 174);
+}
+
+.indice-subtitulo {
+  color: var(--color-secundario);
+}
+
+.indice-lista > li {
+  list-style-type: circle;
+}
+
+.indice-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.indice-lista > li:hover,
+.indice-link:hover {
+  color: var(--color-terciario);
+}
+
+.procesos {
+  border: 1px solid var(--color-sombreado);
+  border-radius: 10px;
+  margin: 2em 5vw 2em auto;
+  width: 100vw;
+  padding: 1em;
+}
+
+/* ESTILOS PARA SITIO SOBRE NOSOTROS */
+
+.ubicacion {
+    width: 100%;
+    height: 360px;
+    text-align: center;
+  }
+  
+  .mapa {
+    width: 40%;
+    height: 100%;
+  }
 
 /*  Media Queries */
 
-
 @media (max-width: 1366px) {
-    aside {
-        margin: auto;
-        width: auto;
-    }
+  aside {
+    margin: auto;
+    width: auto;
+  }
 
-    .indice {
-        position: static;
-        margin-top: 2em;
-    }
+  .indice {
+    position: static;
+    margin-top: 2em;
+  }
 
-    .contenedor-indice {
-        flex-direction: column;
-    }
+  .contenedor-indice {
+    flex-direction: column;
+  }
 
-    .mapa {
-        min-width: 50%;
-    }
+  .mapa {
+    min-width: 50%;
+  }
 }
 
 @media (max-width: 800px) {
-    .subtitulo {
-        grid-column: 1;
-    }
+  .subtitulo {
+    grid-column: 1;
+  }
 
-    .contenedor-tarjetas {
-        grid-template-columns: 1fr;
-    }
+  .contenedor-tarjetas {
+    grid-template-columns: 1fr;
+  }
 
-    .tarjeta {
-        height: 50vh;
-    }
+  .tarjeta {
+    height: 50vh;
+  }
 
-    .mapa {
-        width: 100%;
-    }
+  .mapa {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
-    .hamburguer {
-        display: block;
-    }
+  .hamburguer {
+    display: block;
+  }
 
-    .nav-bar {
-        position: fixed;
-        left: -100%;
-        top: 3em;
-        gap: 0;
-        flex-direction: column;
-        background-color: var(--color-secundario);
-        width: 100%;
-        height: auto;
-        text-align: center;
-        transition: 0.3s;
-    }
+  .nav-bar {
+    position: fixed;
+    left: -100%;
+    top: 3em;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--color-secundario);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: 0.3s;
+  }
 
-    .nav-enlace {
-        margin: 1em 0;
-    }
+  .nav-enlace {
+    margin: 1em 0;
+  }
 
-    .nav-bar.active {
-        left: 0%;
-    }
+  .nav-bar.active {
+    left: 0%;
+  }
 
-    .encabezado {
-        flex-direction: row-reverse;
-    }
+  .encabezado {
+    flex-direction: row-reverse;
+  }
 
-    .mg-10 {
-        margin: 1em 0;
-    }
+  .mg-10 {
+    margin: 1em 0;
+  }
 
-    .mg-20 {
-        margin: 1em 5%
-    }
+  .mg-20 {
+    margin: 1em 5%;
+  }
 
-    .img-inicial {
-        border-radius: 0;
-        width: 100%;
-    }
+  .img-inicial {
+    border-radius: 0;
+    width: 100%;
+  }
 }
