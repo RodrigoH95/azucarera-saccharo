@@ -1,0 +1,41 @@
+.contenedor-indice {
+    gap: 1em;
+}
+
+aside {
+    width: 30vw;
+}
+
+.indice {
+    position: fixed;
+    top: 150px;
+    margin-left: 1em;
+    padding: 1em;
+    border: 1px solid rgb(174, 174, 174);
+}
+
+.indice-subtitulo {
+    color: var(--color-secundario);
+}
+
+.indice-lista > li {
+    list-style-type: circle;
+}
+
+.indice-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.indice-lista > li:hover, .indice-link:hover {
+    color: var(--color-terciario);
+}
+
+
+.procesos {
+    border: 1px solid var(--color-sombreado);
+    border-radius: 10px;
+    margin: 2em 5vw 2em auto;
+    width: 100vw;
+    padding: 1em;
+}
