@@ -5,8 +5,9 @@
 :root {
   --color-primario: #fff;
   --color-secundario: #2a8db7;
-  --color-terciario: #e02525;
-  --color-sombreado: #f6f6f6;
+  --color-terciario: #e02424;
+  --color-terciario-oscuro: #c12828;
+  --color-sombreado: #f2f2f2;
 
   --ff-cursiva: "Corinthia", cursive;
   --ff-cita: "Satisfy", cursive;
@@ -20,6 +21,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -30,6 +35,18 @@ body {
 h2,
 h3 {
   margin: 0.5em 0;
+}
+
+.titulo {
+  font-family: var(--ff-titulo);
+}
+
+.subtitulo {
+  color: var(--color-secundario);
+}
+
+.cursiva {
+  font-family: var(--ff-cursiva);
 }
 
 /* ENCABEZADO */
@@ -137,10 +154,6 @@ h3 {
   margin: 1em 20%;
 }
 
-.titulo {
-  font-family: var(--ff-titulo);
-}
-
 /* FOOTER */
 
 .footer {
@@ -177,7 +190,7 @@ h3 {
   gap: 2em;
 }
 
-.subtitulo {
+.grid-titulo {
   grid-column: 1 / span 2;
   padding: 0 1em;
 }
@@ -232,6 +245,10 @@ h3 {
   background-repeat: no-repeat;
 }
 
+.info {
+  margin: 1em 0;
+}
+
 /* ESTILOS PARA SITIO DE PROCESO */
 
 .contenedor-indice {
@@ -252,10 +269,6 @@ aside {
   border: 1px solid rgb(174, 174, 174);
 }
 
-.indice-subtitulo {
-  color: var(--color-secundario);
-}
-
 .indice-lista > li {
   list-style-type: circle;
 }
@@ -265,9 +278,9 @@ aside {
   color: #000;
 }
 
-.indice-lista > li:hover,
 .indice-link:hover {
   color: var(--color-terciario);
+  font-weight: 900;
 }
 
 .procesos {
@@ -293,6 +306,20 @@ aside {
     transform: scale(2);
 }
 
+.boton {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  border: 3px solid var(--color-terciario);
+  background: var(--color-terciario);
+  text-decoration: none;
+  color: var(--color-primario);
+  border-radius: 4px;
+}
+
+.boton:hover {
+  background: var(--color-terciario-oscuro);
+  border-color: var(--color-terciario-oscuro);
+}
 /* ESTILOS PARA SITIO SOBRE NOSOTROS */
 
 .ubicacion {
@@ -350,7 +377,7 @@ aside {
     width: 100%;
   }
 
-  .subtitulo {
+  .grid-titulo {
     grid-column: 1;
   }
 
