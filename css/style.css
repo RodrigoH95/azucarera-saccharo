@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=Satisfy&family=Signika+Negative:wght@500;700&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Signika+Negative:wght@500;700&family=Ultra&display=swap");
 
 /* ESTILOS GENERALES */
 
@@ -9,7 +9,6 @@
   --color-terciario-oscuro: #c12828;
   --color-sombreado: #f2f2f2;
 
-  --ff-cursiva: "Corinthia", cursive;
   --ff-cita: "Satisfy", cursive;
   --ff-principal: "Signika Negative", sans-serif;
   --ff-titulo: "Ultra", serif;
@@ -96,12 +95,12 @@ h3 {
 }
 
 /* Esto es necesario porque Bootstrap cambia el color de los enlaces */
-.nav-enlace:hover{
+.nav-enlace:hover {
   color: white;
 }
 
 .nav-enlace::after {
-  content: '';
+  content: "";
   display: block;
   margin-top: 3px;
   width: 0;
@@ -168,19 +167,19 @@ h3 {
 /* ESTILOS PARA SITIO INICIO */
 
 .slogan {
-    font-family: var(--ff-cita);
-    font-size: 1.3em;
-  }
-  
-  .img-principal {
-    text-align: center;
-  }
-  
-  .img-inicial {
-    width: 80%;
-    border-radius: 10px;
-    margin-bottom: 1em;
-  }
+  font-family: var(--ff-cita);
+  font-size: 1.3em;
+}
+
+.img-principal {
+  text-align: center;
+}
+
+.img-inicial {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
 
 .contenedor-tarjetas {
   display: grid;
@@ -230,7 +229,7 @@ h3 {
 }
 
 #pallets {
-  background: url(../img/azucar-pallets.jpg);
+  background: url(../img/pallets.png);
 }
 
 #calidad {
@@ -243,6 +242,7 @@ h3 {
 #calidad {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .info {
@@ -292,18 +292,18 @@ aside {
 }
 
 .procesos-img {
-    display: block;
-    margin: 1em auto;
-    width: 35%;
-    border: 5px inset var(--color-secundario);
+  display: block;
+  margin: 1em auto;
+  width: 35%;
+  border: 5px inset var(--color-secundario);
 }
 
 #etapas {
-    transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
 
 #etapas:hover {
-    transform: scale(2);
+  transform: scale(2);
 }
 
 .boton {
@@ -323,20 +323,19 @@ aside {
 /* ESTILOS PARA SITIO SOBRE NOSOTROS */
 
 .ubicacion {
-    width: 100%;
-    height: 360px;
-    text-align: center;
-  }
-  
-  .mapa {
-    width: 40%;
-    height: 100%;
-  }
+  width: 100%;
+  height: 360px;
+  text-align: center;
+}
+
+.mapa {
+  width: 40%;
+  height: 100%;
+}
 
 /*  Media Queries */
 
 @media (max-width: 1366px) {
-
   .tarjeta-fondo {
     font-size: 1em;
   }
@@ -394,11 +393,11 @@ aside {
   }
 
   .procesos-img {
-      width: 80%;
+    width: 80%;
   }
 
   #etapas:hover {
-      transform: none;
+    transform: none;
   }
 
   .mapa {
@@ -441,6 +440,6 @@ aside {
   }
 
   .procesos-img {
-      width: 90%;
+    width: 90%;
   }
 }
