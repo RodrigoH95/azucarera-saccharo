@@ -20,6 +20,13 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 h2,
 h3 {
   margin: 0.5em 0;
@@ -138,7 +145,7 @@ h3 {
 
 .footer {
   justify-content: flex-end;
-  padding: 0 2em;
+  padding: 0.8em 2em;
 }
 
 .footer-item {
@@ -337,7 +344,7 @@ aside {
   .mg-10 {
     margin: 1em 0;
   }
-  
+
   .img-inicial {
     border-radius: 0;
     width: 100%;
