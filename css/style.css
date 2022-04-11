@@ -45,8 +45,8 @@ h3 {
   color: var(--color-secundario);
 }
 
-.cursiva {
-  font-family: var(--ff-cursiva);
+.sombreado {
+  box-shadow: 8px 6px 1px var(--color-terciario);
 }
 
 /* ENCABEZADO */
