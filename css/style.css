@@ -334,6 +334,15 @@ aside {
     gap: 1em;
   }
 
+  .mg-10 {
+    margin: 1em 0;
+  }
+  
+  .img-inicial {
+    border-radius: 0;
+    width: 100%;
+  }
+
   .subtitulo {
     grid-column: 1;
   }
@@ -378,7 +387,7 @@ aside {
     width: 100%;
     height: auto;
     text-align: center;
-    transition: 0.3s;
+    transition: left 0.4s ease-out;
   }
 
   .nav-enlace {
@@ -393,17 +402,8 @@ aside {
     flex-direction: row-reverse;
   }
 
-  .mg-10 {
-    margin: 1em 0;
-  }
-
   .mg-20 {
     margin: 1em 5%;
-  }
-
-  .img-inicial {
-    border-radius: 0;
-    width: 100%;
   }
 
   .procesos-img {
