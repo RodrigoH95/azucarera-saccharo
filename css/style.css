@@ -41,7 +41,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5em;
-  height: 3em;
+  height: 4.5em;
   margin-bottom: 1rem;
 }
 
@@ -60,6 +60,7 @@ h3 {
 .nav-bar {
   height: 2em;
   display: flex;
+  font-size: 1.2em;
   gap: 1em;
 }
 
@@ -67,11 +68,27 @@ h3 {
   text-decoration: none;
   color: var(--color-primario);
   padding: 0.2em 0;
+  transition: transform 0.5s ease;
 }
 
-.nav-enlace:hover {
-  color: var(--color-primario);
-  border-bottom: 2px solid var(--color-primario);
+/* Esto es necesario porque Bootstrap cambia el color de los enlaces */
+.nav-enlace:hover{
+  color: white;
+}
+
+.nav-enlace::after {
+  content: '';
+  display: block;
+  margin-top: 3px;
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background: var(--color-primario);
+  transition: width 0.3s ease;
+}
+
+.nav-enlace:hover::after {
+  width: 100%;
 }
 
 .hamburguer {
@@ -310,6 +327,13 @@ aside {
 }
 
 @media (max-width: 800px) {
+  .nav-bar {
+    height: 2em;
+    display: flex;
+    font-size: 1.1em;
+    gap: 1em;
+  }
+
   .subtitulo {
     grid-column: 1;
   }
