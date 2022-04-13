@@ -420,6 +420,10 @@ aside {
     font-size: 1em;
   }
 
+  .texto-mediano {
+    font-size: 1.3em;
+  }
+
   .procesos-img {
     width: 80%;
   }
