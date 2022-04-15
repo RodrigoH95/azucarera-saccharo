@@ -9,4 +9,4 @@ HAMBURGER.addEventListener("click", () => {
 document.querySelectorAll(".nav-enlace").forEach(n => n.addEventListener("click", () =>{
     HAMBURGER.classList.remove("active");
     NAV_BAR.classList.remove("active");
-}))
+}));
