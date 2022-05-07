@@ -105,6 +105,10 @@ ul {
   transition: transform 0.5s ease;
 }
 
+.footer-list {
+  margin-left: 1rem;
+}
+
 /* Esto es necesario porque Bootstrap cambia el color de los enlaces */
 .nav-enlace:hover {
   color: white;
